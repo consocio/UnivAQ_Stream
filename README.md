@@ -1,11 +1,11 @@
 # PoliDown
 
-## Saves Microsoft Stream videos uploaded by Politecnico di Milano.
+## Saves Microsoft Stream videos uploaded by UnivAQ.
 
 This project was originally based on https://github.com/jacopo-j/PoliDown
 
 Improvements in this fork:
- - PoliMi autologin
+ - UnivAQ autologin
  - Multithreading download through aria2c
  - Possibility to choose the video resolution
 
@@ -31,9 +31,9 @@ Improvements in this fork:
 
 Default usage:
 ```
-$ node polidown.js --username CODICEPERSONA --videoUrls "https://web.microsoftstream.com/video/VIDEO-1"
+$ node polidown.js --username NOMEUTENTE --videoUrls "https://web.microsoftstream.com/video/VIDEO-1"
 
-$ node polidown.js -u CODICEPERSONA -v "https://web.microsoftstream.com/video/VIDEO-1"
+$ node polidown.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1"
 ```
 
 Show options:
@@ -43,7 +43,7 @@ $ node polidown.js -h
 Options:
   --version              Show version number                           [boolean]
   -v, --videoUrls                                             [array] [required]
-  -u, --username         Codice Persona PoliMi               [string] [required]
+  -u, --username         Nome utnete UnivAQ                  [string] [required]
   -p, --password                                                        [string]
   -o, --outputDirectory                             [string] [default: "videos"]
   -q, --quality          Video Quality [0-5]                            [number]
@@ -61,17 +61,17 @@ $ node polidown.js -u CODICEPERSONA
 
 Define default video quality [0-5] (avoid manual prompt for each video):
 ```
-$ node polidown.js -u CODICEPERSONA -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
+$ node polidown.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
 ```
 
 Output directory (relative or absoulte path):
 ```
-$ node polidown.js -u CODICEPERSONA -v "https://web.microsoftstream.com/video/VIDEO-1" -o "/my/path/here"
+$ node polidown.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1" -o "/my/path/here"
 ```
 
 Do not use system keyring to save the password:
 ```
-$ node polidown.js -u CODICEPERSONA -v "https://web.microsoftstream.com/video/VIDEO-1" -k
+$ node polidown.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1" -k
 ```
 
 
