@@ -111,10 +111,11 @@ async function downloadVideo(videoUrls, username, password, outputDirectory) {
    await page.click('input[type="submit"]');
 
    console.log('Filling in authentication login form...');
-   await page.waitForSelector('table[class="UsernamePasswordTable"]');
-   await page.type('input[id="ctl00_ContentPlaceHolder1_UsernameTextBox"]', username) // mette il codice persona
-   await page.type('input[id="ctl00_ContentPlaceHolder1_PasswordTextBox"]', password) // mette la password
-   await page.click('input[type=submit]') // clicca sul tasto "Accedi"
+   await page.waitForSelector('div[id="loginArea"]');
+   // await page.type('input[id="ctl00_ContentPlaceHolder1_UsernameTextBox"]', username) // mette il codice persona
+   await page.type('input[id="passwordInput"]', password) // mette la password
+   await page.click('span[id="submitButton"]') // clicca sul tasto "Accedi"
+
 
    try {
      await page.waitForSelector('span[id="ctl00_PageTitleLabel"]', { timeout: 1000 });
