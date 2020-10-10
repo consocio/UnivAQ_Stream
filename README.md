@@ -25,9 +25,9 @@ Improvements in this fork:
 
 Default usage:
 ```
-$ node univaqstream.js --username NOMEUTENTE --videoUrls "https://web.microsoftstream.com/video/VIDEO-1"
+$ node univaqstream.js --username YOUR EMAIL --videoUrls "https://web.microsoftstream.com/video/VIDEO-1"
 
-$ node univaqstream.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1"
+$ node univaqstream.js -u YOUR EMAIL -v "https://web.microsoftstream.com/video/VIDEO-1"
 ```
 
 Show options:
@@ -48,7 +48,7 @@ Options:
 Multiple videos download:
 ```
 Project was originally based on https://github.com/jacopo-j/PoliDown
-$ node univaqstream.js -u NOMEUTENTE
+$ node univaqstream.js -u YOUR EMAIL 
     -v "https://web.microsoftstream.com/video/VIDEO-1"
                 "https://web.microsoftstream.com/video/VIDEO-2"
                 "https://web.microsoftstream.com/video/VIDEO-3"
@@ -56,17 +56,17 @@ $ node univaqstream.js -u NOMEUTENTE
 
 Define default video quality [0-5] (avoid manual prompt for each video):
 ```
-$ node univaqstream.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
+$ node univaqstream.js -u YOUR EMAIL -v "https://web.microsoftstream.com/video/VIDEO-1" -q 4
 ```
 
 Output directory (relative or absoulte path):
 ```
-$ node univaqstream.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1" -o "/my/path/here"
+$ node univaqstream.js -u YOUR EMAIL -v "https://web.microsoftstream.com/video/VIDEO-1" -o "/my/path/here"
 ```
 
 Do not use system keyring to save the password:
 ```
-$ node univaqstream.js -u NOMEUTENTE -v "https://web.microsoftstream.com/video/VIDEO-1" -k
+$ node univaqstream.js -u YOUR EMAIL -v "https://web.microsoftstream.com/video/VIDEO-1" -k
 ```
 
 
