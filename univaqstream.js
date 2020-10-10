@@ -106,7 +106,7 @@ async function downloadVideo(videoUrls, username, password, outputDirectory) {
    console.log('Navigating to STS login page...');
    await page.goto(videoUrls[0], { waitUntil: 'networkidle2' });
    await page.waitForSelector('input[type="email"]');
-   const usernameEmail = username + "@univaq.it";
+   const usernameEmail = username;
    await page.keyboard.type(usernameEmail);
    await page.click('input[type="submit"]');
 
